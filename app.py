@@ -60,8 +60,9 @@ if uploaded_file is not None:
             }
             
             # Patient Info Box
-            st.info(f"**Patient Name:** {parsed_data.get('Patient Name', 'N/A')}")  
-**Collected At:** {parsed_data['Reference/Doctor']}")
+            st.info(f"**Patient Name:** {parsed_data.get('Patient Name', 'N/A')}")
+            st.info(f"**Collected At:** {parsed_data.get('Reference/Doctor', 'N/A')}")
+            
             
             # Key Metrics Display
             st.markdown("#### ⚡ Key Test Summary")
